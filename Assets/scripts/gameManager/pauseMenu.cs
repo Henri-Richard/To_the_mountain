@@ -12,6 +12,7 @@ public class pauseMenu : MonoBehaviour
     void Start()
     {
         tenueDescaladeUI.SetActive(false);
+        tenueDescaladeUI.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void Update()
@@ -61,10 +62,12 @@ public class pauseMenu : MonoBehaviour
             if(inventaire.tenueDEscalade == false)
             {
                 inventaire.tenueDEscalade = true;
+                tenueDescaladeUI.transform.GetChild(0).gameObject.SetActive(true);
             }
             else
             {
                 inventaire.tenueDEscalade = false;
+                tenueDescaladeUI.transform.GetChild(0).gameObject.SetActive(false);
             }
         }
     }

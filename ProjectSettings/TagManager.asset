@@ -7,6 +7,7 @@ TagManager:
   - climable
   - canClimbing
   - canStream
+  - postProcess
   layers:
   - Default
   - TransparentFX
