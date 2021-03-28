@@ -3,6 +3,7 @@
 public class chessScript : MonoBehaviour
 {
     public Inventaire inventaire;
+    public pauseMenu pauseMenu;
     private GameObject player;
 
     private float distance;
@@ -31,6 +32,7 @@ public class chessScript : MonoBehaviour
             if(newObject == "tenueDEscaladeInvent")
             {
                 inventaire.tenueDEscaladeInvent = true;
+                pauseMenu.activeTenueDEscaladeUI();
             }
         }
     }
